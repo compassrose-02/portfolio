@@ -3,8 +3,12 @@ import Link from 'next/link'
 export default function Home() {
   return (
     <>
-      <header>
-        <h1>Hero</h1>
+      <header className='bg-gray-400'>
+        <h1 className='flex flex-col text-8xl font-bold'>
+          <span>Design</span>
+          <span>Develop</span>
+          <span>Delight</span>
+        </h1>
       </header>
       <main>
         <section>
