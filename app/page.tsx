@@ -1,28 +1,44 @@
 import Link from 'next/link'
+import Image from 'next/image'
+
+import pfp from './lib/img/personplaceholder.jpg'
 
 export default function Home() {
   return (
     <>
-      <header className='bg-gray-400'>
-        <h1 className='flex flex-col text-8xl font-bold'>
+      <header className='bg-gray-100 flex justify-around h-100 items-center'>
+        <Image
+          src={pfp}
+          alt="Picture of Riley Pankow"
+          className='h-full w-auto'
+        />
+        <h1 className='flex flex-col text-7xl'>
           <span>Design</span>
           <span>Develop</span>
-          <span>Delight</span>
+          <span className='font-bold italic'>Delight!</span>
         </h1>
       </header>
       <main>
-        <section>
-          <h1>
-            About Me
-          </h1>
-          <p>
-            About me text goes here :3
-          </p>
+        <section className='bg-white flex justify-between px-6 py-10'>
+          <div>
+            <h2>
+              I&apos;m Riley Pankow
+            </h2>
+            <h3>
+              UI/UX Designer | Front-end Dev
+            </h3>
+            <p>
+              I create novel UI design solutions, develop engaging web and mobile applications, and uplift teams with contagious enthusiasm!
+            </p>
+          </div>
+          <div>
+
+          </div>
         </section>
-        <section>
-          <h1>
+        <section className='bg-gray-100 px-6 py-10'>
+          <h2>
             Selected Works
-          </h1>
+          </h2>
           <ul>
             <li>
               <Link href="/works/work1">Work 1</Link>
@@ -30,18 +46,27 @@ export default function Home() {
             </li>
           </ul>
         </section>
-        <section>
-          <h1>
+        <section className='bg-white px-6 py-10'>
+          <h2>
             Education
-          </h1>
-          <p>
-            Education body goes here, probably two cards side-by-side with the two schools ive gone to
-          </p>
+          </h2>
+          <div className='flex gap-5'>
+            <div className='bg-gray-100 flex-1 p-5'>
+              <h4>Rochester Institute of Technology</h4>
+              <p>BS - Human Centered Computing</p>
+              <p>2022-2026</p>
+            </div>
+            <div className='bg-gray-100 flex-1 p-5'>
+              <h4>Onondaga Community College</h4>
+              <p>AS - Computer Information Systems</p>
+              <p>2020-2022</p>
+            </div>
+          </div>
         </section>
-        <section>
-          <h1>
+        <section className='bg-gray-100 px-6 py-10'>
+          <h2>
             Work Experience
-          </h1>
+          </h2>
           <ul>
             <li>
               <Link href="/experience/exp1">Experience 1</Link>
@@ -50,7 +75,7 @@ export default function Home() {
           </ul>
         </section>
       </main>
-      <footer>
+      <footer className='px-6 py-10'>
         <p>Footer</p>
       </footer>
     </>
