@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(70, 70, 75);
   font-family: "Rubik", Arial, Helvetica, sans-serif;
