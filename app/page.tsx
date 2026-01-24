@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import ScrollNav from './components/scrollnav';
+import SkillsBox from './components/skillsbox';
 
 import pfp from './lib/img/personplaceholder.jpg'
 
@@ -22,8 +23,8 @@ export default function Home() {
           </h1>
         </header>
         <main>
-          <section className='bg-white flex justify-between px-6 py-10'>
-            <div>
+          <section className='bg-white flex justify-between px-6 py-10 gap-10'>
+            <div className='w-1/3'>
               <h2>
                 I&apos;m Riley Pankow
               </h2>
@@ -34,8 +35,31 @@ export default function Home() {
                 I create novel UI design solutions, develop engaging web and mobile applications, and uplift teams with contagious enthusiasm!
               </p>
             </div>
-            <div>
-
+            <div className='flex w-2/3 gap-2'>
+              <div className='w-1/4'>
+                <h4>
+                  Design Tools
+                </h4>
+                <SkillsBox content={['Figma', 'Spline', 'Illustrator', 'Photoshop', 'Lightroom']} />
+              </div>
+              <div className='w-1/4'>
+                <h4>
+                  Dev Tools
+                </h4>
+                <SkillsBox content={['VSCode', 'Visual Studio', 'JetBrains IDEs', 'Android Studio', 'XCode', 'FlutterFlow']} />
+              </div>
+              <div className='w-1/4'>
+                <h4>
+                  Languages
+                </h4>
+                <SkillsBox content={['HTML', 'CSS', 'JS', 'PHP', 'C++', 'Python', 'Java' , 'Swift' , 'Flutter' , 'React', 'ASP.net', 'Kotlin']} />
+              </div>
+              <div className='w-1/4'>
+                <h4>
+                  Soft Skills
+                </h4>
+                <SkillsBox content={['Group Leadership', 'Communication', 'Team-Player', 'Adaptable', 'Loves to Learn']} />
+              </div>
             </div>
           </section>
           <section id="works" className='bg-gray-100 px-6 py-10'>
