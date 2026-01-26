@@ -7,16 +7,16 @@ export default function ScrollNav() {
         <nav className="bg-gray-800 flex" style={{writingMode: "sideways-rl"}}>
             <ul className="flex sticky top-0">
                 <li>
-                    <Link href="#about" className="block p-4 text-white text-4xl font-light hover:bg-gray-700 transition-colors">About</Link>
+                    <Link href="#about" className="transition-colors duration-300 block p-4 text-white text-4xl font-light hover:bg-gray-500">About</Link>
                 </li>
                 <li>
-                    <Link href="#works" className="block p-4 text-white text-4xl font-light hover:bg-gray-700 transition-colors">Works</Link>
+                    <Link href="#works" className="transition-colors duration-300 block p-4 text-white text-4xl font-light hover:bg-gray-500">Works</Link>
                 </li>
                 <li>
-                    <Link href="#education" className="block p-4 text-white text-4xl font-light hover:bg-gray-700 transition-colors">Education</Link>
+                    <Link href="#education" className="transition-colors duration-300 block p-4 text-white text-4xl font-light hover:bg-gray-500">Education</Link>
                 </li>
                 <li>
-                    <Link href="#experience" className="block p-4 text-white text-4xl font-light hover:bg-gray-700 transition-colors">Experience</Link>
+                    <Link href="#experience" className="transition-colors duration-300 block p-4 text-white text-4xl font-light hover:bg-gray-500">Experience</Link>
                 </li>
             </ul>
         </nav>

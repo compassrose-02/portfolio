@@ -1,11 +1,18 @@
 import Link from 'next/link'
 import Image from 'next/image'
+
 import ScrollNav from './components/scrollnav';
 import SkillsBox from './components/skillsbox';
 
+import { MdMail, MdPhone, } from "react-icons/md";
+import { FaLinkedin } from "react-icons/fa";
+import { IconContext } from 'react-icons';
+
 import pfp from './lib/img/personplaceholder.jpg'
+// import { useContext } from 'react';
 
 export default function Home() {
+
   return (
     <div className='flex'>
       <ScrollNav />
@@ -24,41 +31,58 @@ export default function Home() {
         </header>
         <main>
           <section className='bg-white flex justify-between px-6 py-10 gap-10'>
-            <div className='w-1/3'>
-              <h2>
-                I&apos;m Riley Pankow
-              </h2>
-              <h3>
-                UI/UX Designer | Front-end Dev
-              </h3>
-              <p>
-                I create novel UI design solutions, develop engaging web and mobile applications, and uplift teams with contagious enthusiasm!
-              </p>
+            <div className='w-3/8 shrink-0 flex flex-col justify-between'>
+              <div>
+                <h2>
+                  I&apos;m Riley Pankow
+                </h2>
+                <h3>
+                  UI/UX Designer | Front-end Dev
+                </h3>
+                <p>
+                  I create novel UI design solutions, develop engaging web and mobile applications, and uplift teams with contagious enthusiasm!
+                </p>
+              </div>
+              <div>
+                <h4>
+                  Get in Touch
+                </h4>
+                <div className='flex gap-2'>
+                  <button aria-label='Email' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><MdMail /></button>
+                  <button aria-label='Phone' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><MdPhone /></button>
+                  <button aria-label='LinkedIn' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><FaLinkedin /></button>
+                </div>
+              </div>
             </div>
-            <div className='flex w-2/3 gap-2'>
-              <div className='w-1/4'>
-                <h4>
-                  Design Tools
-                </h4>
-                <SkillsBox content={['Figma', 'Spline', 'Illustrator', 'Photoshop', 'Lightroom']} />
-              </div>
-              <div className='w-1/4'>
-                <h4>
-                  Dev Tools
-                </h4>
-                <SkillsBox content={['VSCode', 'Visual Studio', 'JetBrains IDEs', 'Android Studio', 'XCode', 'FlutterFlow']} />
-              </div>
-              <div className='w-1/4'>
-                <h4>
-                  Languages
-                </h4>
-                <SkillsBox content={['HTML', 'CSS', 'JS', 'PHP', 'C++', 'Python', 'Java' , 'Swift' , 'Flutter' , 'React', 'ASP.net', 'Kotlin']} />
-              </div>
-              <div className='w-1/4'>
-                <h4>
-                  Soft Skills
-                </h4>
-                <SkillsBox content={['Group Leadership', 'Communication', 'Team-Player', 'Adaptable', 'Loves to Learn']} />
+            <div>
+              <h3 className='mt-5'>
+                I have skills with:
+              </h3>
+              <div className='flex gap-2'>
+                <div className='w-1/4'>
+                  <h4>
+                    Design Tools
+                  </h4>
+                  <SkillsBox content={['Figma', 'Spline', 'Illustrator', 'Photoshop', 'Lightroom']} />
+                </div>
+                <div className='w-1/4'>
+                  <h4>
+                    Dev Tools
+                  </h4>
+                  <SkillsBox content={['VSCode', 'Visual Studio', 'JetBrains IDEs', 'Android Studio', 'XCode', 'FlutterFlow']} />
+                </div>
+                <div className='w-1/4'>
+                  <h4>
+                    Languages
+                  </h4>
+                  <SkillsBox content={['HTML', 'CSS', 'JS', 'PHP', 'C++', 'Python', 'Java', 'Swift', 'Flutter', 'React', 'ASP.net', 'Kotlin']} />
+                </div>
+                <div className='w-1/4'>
+                  <h4>
+                    Soft Skills
+                  </h4>
+                  <SkillsBox content={['Group Leadership', 'Communication', 'Team-Player', 'Adaptable', 'Loves to Learn']} />
+                </div>
               </div>
             </div>
           </section>
@@ -66,9 +90,19 @@ export default function Home() {
             <h2>
               Selected Works
             </h2>
-            <ul>
+            <ul className='grid grid-cols-2 gap-5'>
               <li>
-                <Link href="/works/work1">Work 1</Link>
+                <Link href="/works/work1" className='block bg-gray-400'>
+                <div>
+                  <h4>Work 1</h4>
+                  <p>Workplace 1</p>
+                </div>
+                <div>
+
+                </div>
+                </Link>
+              </li>
+              <li>
                 <Link href="/works/work2">Work 2</Link>
               </li>
             </ul>
