@@ -6,10 +6,11 @@ import SkillsBox from './components/skillsbox';
 
 import { MdMail, MdPhone, } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
-import { IconContext } from 'react-icons';
 
-import pfp from './lib/img/personplaceholder.jpg'
-// import { useContext } from 'react';
+import pfp from './lib/img/personplaceholder.jpg';
+import placeholder from './lib/img/imgplaceholder.jpg';
+
+import './lib/page.css';
 
 export default function Home() {
 
@@ -17,7 +18,7 @@ export default function Home() {
     <div className='flex'>
       <ScrollNav />
       <div>
-        <header id="about" className='bg-gray-100 flex justify-around h-100 items-center'>
+        <header className='bg-gray-100 flex justify-around h-100 items-center'>
           <Image
             src={pfp}
             alt="Picture of Riley Pankow"
@@ -30,12 +31,15 @@ export default function Home() {
           </h1>
         </header>
         <main>
-          <section className='bg-white flex justify-between px-6 py-10 gap-10'>
-            <div className='w-3/8 shrink-0 flex flex-col justify-between'>
-              <div>
-                <h2>
-                  I&apos;m Riley Pankow
-                </h2>
+          <section className='bg-white px-6 py-10' id='about'>
+            <h2 id='name' className='leading-10'>
+              I&apos;m Riley Pankow
+            </h2>
+            <h3 id='skills' className='leading-10'>
+              I have skills with:
+            </h3>
+            <div className='flex flex-col justify-between ' id='nameContent'>
+              <div className='flex flex-col gap-1'>
                 <h3>
                   UI/UX Designer | Front-end Dev
                 </h3>
@@ -54,10 +58,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            <div>
-              <h3 className='mt-5'>
-                I have skills with:
-              </h3>
+            <div id='skillsContent'>
               <div className='flex gap-2'>
                 <div className='w-1/4'>
                   <h4>
@@ -92,14 +93,16 @@ export default function Home() {
             </h2>
             <ul className='grid grid-cols-2 gap-5'>
               <li>
-                <Link href="/works/work1" className='block bg-gray-400'>
-                <div>
-                  <h4>Work 1</h4>
-                  <p>Workplace 1</p>
-                </div>
-                <div>
-
-                </div>
+                <Link href="/works/work1" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex flex-col justify-between p-4'>
+                    <h4>Work 1</h4>
+                    <p>Workplace 1</p>
+                  </div>
+                  <Image
+                    src={placeholder}
+                    alt="Placeholder Image"
+                    className='h-full w-auto'
+                  />
                 </Link>
               </li>
               <li>

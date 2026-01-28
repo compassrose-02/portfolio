@@ -1,0 +1,23 @@
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1.85fr;
+    grid-template-areas: 
+    'name skills'
+    'nameContent skillsContent';
+    gap: 10px 20px;
+}
+
+#name {
+    grid-area: name;
+    align-self: baseline;
+}
+#skills {
+    grid-area: skills;
+    align-self: baseline;
+}
+#nameContent {
+    grid-area: nameContent;
+}
+#skillsContent {
+    grid-area: skillsContent;
+}
