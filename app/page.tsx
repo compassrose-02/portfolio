@@ -36,7 +36,7 @@ export default function Home() {
               I&apos;m Riley Pankow
             </h2>
             <h3 id='skills' className='leading-10'>
-              I have skills with:
+              I have experience with:
             </h3>
             <div className='flex flex-col justify-between ' id='nameContent'>
               <div className='flex flex-col gap-1'>
@@ -93,10 +93,10 @@ export default function Home() {
             </h2>
             <ul className='grid grid-cols-2 gap-5'>
               <li>
-                <Link href="/works/work1" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                <Link href="/works/tt2.1" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
-                    <h4>Work 1</h4>
-                    <p>Workplace 1</p>
+                    <h4>MVIQ+ Turning Tool Integration</h4>
+                    <p>Waygate Technologies - 2024</p>
                   </div>
                   <Image
                     src={placeholder}
@@ -106,7 +106,56 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/works/work2">Work 2</Link>
+                <Link href="/works/sony" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex flex-col justify-between p-4'>
+                    <h4>Special Olympics Site Redesign</h4>
+                    <p>Rochester Institute of Technology - 2025</p>
+                  </div>
+                  <Image
+                    src={placeholder}
+                    alt="Placeholder Image"
+                    className='h-full w-auto'
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="/works/axolift" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex flex-col justify-between p-4'>
+                    <h4>AxoLift Capstone Project</h4>
+                    <p>Rochester Institute of Technology - 2025</p>
+                  </div>
+                  <Image
+                    src={placeholder}
+                    alt="Placeholder Image"
+                    className='h-full w-auto'
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="/works/button-ex" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex flex-col justify-between p-4'>
+                    <h4>Button Exercise</h4>
+                    <p>Rochester Institute of Technology - 2025</p>
+                  </div>
+                  <Image
+                    src={placeholder}
+                    alt="Placeholder Image"
+                    className='h-full w-auto'
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="/works/tasks-ex" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex flex-col justify-between p-4'>
+                    <h4>Tasks Revamp Exercise</h4>
+                    <p>Rochester Institute of Technology - 2025</p>
+                  </div>
+                  <Image
+                    src={placeholder}
+                    alt="Placeholder Image"
+                    className='h-full w-auto'
+                  />
+                </Link>
               </li>
             </ul>
           </section>
@@ -131,10 +180,19 @@ export default function Home() {
             <h2>
               Work Experience
             </h2>
-            <ul>
+            <ul className='grid grid-cols-2 gap-5'>
               <li>
-                <Link href="/experience/exp1">Experience 1</Link>
-                <Link href="/experience/exp2">Experience 2</Link>
+                <Link href="/experience/waygate" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex flex-col justify-between p-4'>
+                    <h4>Waygate Technologies</h4>
+                    <p>01/2024 - 07/2024</p>
+                  </div>
+                  <Image
+                    src={placeholder}
+                    alt="Placeholder Image"
+                    className='h-full w-auto'
+                  />
+                </Link>
               </li>
             </ul>
           </section>
