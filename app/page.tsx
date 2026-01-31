@@ -9,6 +9,12 @@ import { FaLinkedin } from "react-icons/fa";
 
 import pfp from './lib/img/personplaceholder.jpg';
 import placeholder from './lib/img/imgplaceholder.jpg';
+import wglogo from './lib/img/waygatelogo.jpg'
+import ttimg from './lib/img/mviq_fd.png'
+import sonylogo from './lib/img/sonylogo.png'
+import axoliftlogo from './lib/img/axoliftlogo.png'
+import ex2logo from './lib/img/ex2logo.png'
+import ex3logo from './lib/img/ex3logo.png'
 
 import './lib/page.css';
 
@@ -99,9 +105,9 @@ export default function Home() {
                     <p>Waygate Technologies - 2024</p>
                   </div>
                   <Image
-                    src={placeholder}
-                    alt="Placeholder Image"
-                    className='h-full w-auto'
+                    src={ttimg}
+                    alt="MVIQ+ Turning Tool Integration Image"
+                    className='h-full w-auto aspect-square object-cover'
                   />
                 </Link>
               </li>
@@ -112,9 +118,9 @@ export default function Home() {
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
                   <Image
-                    src={placeholder}
-                    alt="Placeholder Image"
-                    className='h-full w-auto'
+                    src={sonylogo}
+                    alt="Special Olympics NY Logo"
+                    className='h-full w-auto  aspect-square object-cover'
                   />
                 </Link>
               </li>
@@ -125,9 +131,9 @@ export default function Home() {
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
                   <Image
-                    src={placeholder}
-                    alt="Placeholder Image"
-                    className='h-full w-auto'
+                    src={axoliftlogo}
+                    alt="AxoLift Logo"
+                    className='h-full w-auto  aspect-square object-cover'
                   />
                 </Link>
               </li>
@@ -138,9 +144,9 @@ export default function Home() {
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
                   <Image
-                    src={placeholder}
-                    alt="Placeholder Image"
-                    className='h-full w-auto'
+                    src={ex2logo}
+                    alt="Exercise 2 Logo"
+                    className='h-full w-auto aspect-square object-cover'
                   />
                 </Link>
               </li>
@@ -151,9 +157,9 @@ export default function Home() {
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
                   <Image
-                    src={placeholder}
-                    alt="Placeholder Image"
-                    className='h-full w-auto'
+                    src={ex3logo}
+                    alt="Exercise 3 Logo"
+                    className='h-full w-auto aspect-square object-cover'
                   />
                 </Link>
               </li>
@@ -188,8 +194,8 @@ export default function Home() {
                     <p>01/2024 - 07/2024</p>
                   </div>
                   <Image
-                    src={placeholder}
-                    alt="Placeholder Image"
+                    src={wglogo}
+                    alt="Waygate Technologies Logo"
                     className='h-full w-auto'
                   />
                 </Link>
