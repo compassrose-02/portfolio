@@ -45,7 +45,7 @@ export default function Home() {
               I have experience with:
             </h3>
             <div className='flex flex-col justify-between ' id='nameContent'>
-              <div className='flex flex-col gap-1'>
+              <div className='flex flex-col gap-2'>
                 <h3>
                   UI/UX Designer | Front-end Dev
                 </h3>
