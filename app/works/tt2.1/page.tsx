@@ -1,8 +1,14 @@
+import WorkPageNav from "../components/workPageNav";
+
 export default function tt21() {
   return (
-    <div>
-      <h1>TT2.1 Project</h1>
-      <p>Details about the TT2.1 project will go here.</p>
-    </div>
+        <div className="flex">
+            <WorkPageNav route={["works","tt2.1"]} />
+            <div>
+                <header></header>
+                <main></main>
+                <footer></footer>
+            </div>
+        </div>
   );
 }
