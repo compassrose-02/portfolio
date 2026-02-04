@@ -4,7 +4,7 @@ import Image from 'next/image'
 import ScrollNav from './components/scrollnav';
 import SkillsBox from './components/skillsbox';
 
-import { MdMail, MdPhone, } from "react-icons/md";
+import { MdMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 
 import pfp from './lib/img/personplaceholder.jpg';
@@ -17,6 +17,7 @@ import ex2logo from './lib/img/ex2logo.png'
 import ex3logo from './lib/img/ex3logo.png'
 
 import './lib/page.css';
+import { getCurrentYear } from './lib/utils';
 
 export default function Home() {
 
@@ -59,7 +60,6 @@ export default function Home() {
                 </h4>
                 <div className='flex gap-2'>
                   <button aria-label='Email' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><MdMail /></button>
-                  <button aria-label='Phone' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><MdPhone /></button>
                   <button aria-label='LinkedIn' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><FaLinkedin /></button>
                 </div>
               </div>
@@ -203,8 +203,8 @@ export default function Home() {
             </ul>
           </section>
         </main>
-        <footer className='px-6 py-10 bg-gray-800'>
-          <p>Footer</p>
+        <footer className='px-6 py-10 bg-gray-800 flex justify-center text-white align-center'>
+          <p>&copy; {getCurrentYear()} Riley Pankow. All rights reserved.</p>
         </footer>
       </div>
     </div>
