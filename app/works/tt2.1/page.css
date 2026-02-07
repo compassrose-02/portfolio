@@ -1,5 +1,41 @@
 #ColGridContainer {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto auto auto auto;
     gap: 15px;
+}
+
+#body1{
+    grid-area: b1;
+}
+
+#body2{
+    grid-area: b2;
+}
+
+#img1{
+    grid-area: i1;
+}
+
+#img2{
+    grid-area: i2;
+}
+
+@media (min-width: 0) {
+        #ColGridContainer {
+        grid-template-areas: 
+        'b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1'
+        'i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1'
+        'b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2'
+        'i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2'
+    }
+}
+
+@media (min-width: 48rem) {
+    #ColGridContainer {
+        grid-template-areas: 
+        'b1 b1 b1 b1 b1 b1 i1 i1 i1 i1 i1 i1'
+        'b2 b2 b2 b2 b2 b2 i2 i2 i2 i2 i2 i2'
+        ;
+    }
 }
