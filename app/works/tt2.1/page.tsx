@@ -9,7 +9,7 @@ import hero from './img/hero.png';
 export default function tt21() {
 
     const style = {
-        backgroundImage: `url(${hero.src})`,
+        backgroundImage: `linear-gradient(180deg,rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 70%, rgba(0, 0, 0, 0.8) 100%),url(${hero.src})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
     }
@@ -17,13 +17,8 @@ export default function tt21() {
     return (
         <div className="flex">
             <WorkPageNav />
-            <div className="bg-gray-100">
+            <div className="bg-gray-100 w-full">
                 <header className="h-70 flex" style={style}>
-                    {/* <Image
-                        src={hero}
-                        alt="MVIQ+ Turning Tool Integration Hero Image"
-                        className="object-cover w-full"
-                    /> */}
                     <h2 className="mt-auto px-6 text-white">
                         MVIQ+ Turning Tool Integration
                     </h2>
@@ -31,7 +26,7 @@ export default function tt21() {
                 <main className="">
                     <div className="bg-white px-6 pb-10 pt-2">
                         <h3>
-                            Waygate Technologies | 01/2024-07/2024
+                            Waygate Technologies | 01/2024 - 07/2024
                         </h3>
                         <div id="ColGridContainer" className="mt-10">
                             <section id="body1" className="flex gap-4 flex-col">
