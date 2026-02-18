@@ -5,14 +5,22 @@ import { getCurrentYear } from "@/app/lib/utils";
 import './page.css';
 import Image from "next/image";
 import ImageGallery from "react-image-gallery";
-import type {GalleryItem, ImageGalleryRef} from "react-image-gallery";
+import type { GalleryItem, ImageGalleryRef } from "react-image-gallery";
+import { useRef } from "react";
+import { IoMdApps } from "react-icons/io";
 
 import hero from './img/hero.png';
 import notes from './img/Notes.png';
 import styleboard from './img/styleboard.png';
-import placeholder from './img/gallery/imgplaceholder.jpg';
-import placeholderthumb from './img/gallery/imgplacerholterthumb.jpg';
-import { useRef } from "react";
+import final from './img/gallery/Final.png';
+import finalthumb from './img/gallery/Finalthumb.png';
+import userflow from './img/gallery/Userflow.png';
+import userflowthumb from './img/gallery/Userflowthumb.png';
+import wireframe from './img/gallery/Wireframe.png';
+import wireframethumb from './img/gallery/Wireframethumb.png';
+// import placeholder from './img/gallery/imgplaceholder.jpg';
+// import placeholderthumb from './img/gallery/imgplacerholterthumb.jpg';
+
 
 export default function Sony() {
 
@@ -24,16 +32,16 @@ export default function Sony() {
 
   const images: GalleryItem[] = [
     {
-      original: placeholder.src,
-      thumbnail: placeholderthumb.src,
+      original: wireframe.src,
+      thumbnail: wireframethumb.src,
     },
     {
-      original: placeholder.src,
-      thumbnail: placeholderthumb.src,
+      original: userflow.src,
+      thumbnail: userflowthumb.src,
     },
     {
-      original: placeholder.src,
-      thumbnail: placeholderthumb.src,
+      original: final.src,
+      thumbnail: finalthumb.src,
     },
   ]
 
@@ -121,12 +129,22 @@ export default function Sony() {
               </section>
             </div>
           </div>
-          {/* image gallery goes here */}
-          <ImageGallery
-            ref={galleryRef}
-            items={images}
-            onSlide={(index) => console.log("Slid to", index)}
-          />
+          <div className="p-6 flex flex-col gap-4">
+            <div className="flex gap-1 items-center">
+              <h4>
+                Design Artifacts
+              </h4>
+              <IoMdApps size={20} />
+            </div>
+            <div className="bg-gray-200">
+              <ImageGallery
+                ref={galleryRef}
+                items={images}
+                onSlide={(index) => console.log("Slid to", index)}
+              />
+            </div>
+
+          </div>
         </main>
         <footer className='px-6 py-10 bg-gray-800 flex justify-center text-white align-center'>
           <p>&copy; {getCurrentYear()} Riley Pankow. All rights reserved.</p>
