@@ -12,13 +12,43 @@ import { IoMdApps } from "react-icons/io";
 // import hero from './img/hero.png';
 import phonemockup from './img/phonemockup.png';
 import taskflow from './img/taskflow.png';
-
+import herologo from './img/herologo.png';
+import heromockup from './img/heromockup.png';
+import dashboardhifi from './img/gallery/dashboardhifi.png';
+import dashboardhifithumb from './img/gallery/dashboardhifithumb.png';
+import dashboardlofi from './img/gallery/dashboardlofi.png';
+import dashboardlofithumb from './img/gallery/dashboardlofithumb.png';
+import dashboardmobile from './img/gallery/dashboardmobile.png';
+import dashboardmobilethumb from './img/gallery/dashboardmobilethumb.png';
+import designsystem from './img/gallery/designsystem.png';
+import designsystemthumb from './img/gallery/designsystemthumb.png';
+import persona from './img/gallery/persona.png';
+import personathumb from './img/gallery/personathumb.png';
 
 export default function Sony() {
 
 
   const images: GalleryItem[] = [
-
+    {
+      original: dashboardhifi.src,
+      thumbnail: dashboardhifithumb.src,
+    },
+    {
+      original: dashboardlofi.src,
+      thumbnail: dashboardlofithumb.src,
+    },
+    {
+      original: dashboardmobile.src,
+      thumbnail: dashboardmobilethumb.src,
+    },
+    {
+      original: designsystem.src,
+      thumbnail: designsystemthumb.src,
+    },
+    {
+      original: persona.src,
+      thumbnail: personathumb.src,
+    },
   ]
 
   const galleryRef = useRef<ImageGalleryRef>(null);
@@ -27,10 +57,14 @@ export default function Sony() {
     <div className="flex">
       <WorkPageNav />
       <div className="bg-gray-100 w-full">
-        <header className="h-70 flex bg-[#373D97]">
-          <h2 className="mt-auto px-6 text-white">
-            AxoLift Capstone Project
-          </h2>
+        <header className="h-70 flex flex-row justify-between bg-[#373D97]">
+          <div className="flex flex-col justify-between">
+            <Image src={herologo} alt="axolift logo" className="h-full aspect-square"/>
+            <h2 className="px-6 text-white">
+              AxoLift Capstone Project
+            </h2>
+          </div>
+          <Image src={heromockup} alt="axolift hero mockup" className="h-full aspect-square" id="heromockup"/>
         </header>
         <main>
           <div className="bg-white px-6 pb-10 pt-2">
