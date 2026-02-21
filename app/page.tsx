@@ -138,9 +138,9 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/works/button-ex" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                <Link href="/works/camera-ex" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
-                    <h4>Button Exercise</h4>
+                    <h4>Whimsical Camera Exercise</h4>
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
                   <Image
