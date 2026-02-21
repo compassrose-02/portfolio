@@ -25,6 +25,11 @@
      grid-area: b5;
  }
 
+ #b6 {
+    grid-area: b6;
+    justify-self: center;
+ }
+
  #i1 {
      grid-area: i1;
  }
@@ -44,6 +49,7 @@
              'b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4'
              'i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2'
              'b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5'
+             'b6 b6 b6 b6 b6 b6 b6 b6 b6 b6 b6 b6'
      }
 
      h2 {
@@ -64,6 +70,7 @@
              'b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4'
              'i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2'
              'b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5'
+             'b6 b6 b6 b6 b6 b6 b6 b6 b6 b6 b6 b6'
          ;
      }
 
