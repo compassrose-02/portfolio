@@ -1,0 +1,59 @@
+ #ColGridContainer {
+     display: grid;
+     grid-template-columns: repeat(12, 1fr);
+     grid-template-rows: auto auto auto auto;
+     gap: 15px;
+ }
+
+ #b1 {
+     grid-area: b1;
+ }
+
+ #b2 {
+     grid-area: b2;
+ }
+
+ #b3 {
+     grid-area: b3;
+ }
+
+ #b4 {
+     grid-area: b4;
+ }
+
+
+ @media (min-width: 0) {
+     #ColGridContainer {
+         grid-template-areas:
+             'b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1'
+             'b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2'
+             'b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3'
+             'b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4'
+     }
+
+     h2 {
+         font-size: 1.75rem;
+     }
+
+     h3 {
+         font-size: 1.25rem;
+     }
+ }
+
+ @media (min-width: 48rem) {
+     #ColGridContainer {
+         grid-template-areas:
+             'b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1'
+             'b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2'
+             'b3 b3 b3 b3 b3 b3 b4 b4 b4 b4 b4 b4'
+         ;
+     }
+
+     h2 {
+         font-size: 2.5rem;
+     }
+
+     h3 {
+         font-size: 1.5rem;
+     }
+ }
