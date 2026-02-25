@@ -3,7 +3,8 @@
 import WorkPageNav from "../components/workPageNav";
 import { getCurrentYear } from "@/app/lib/utils";
 import './page.css';
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+ "next/image";
 import ImageGallery from "react-image-gallery";
 import type { GalleryItem, ImageGalleryRef } from "react-image-gallery";
 import { useRef } from "react";
@@ -85,7 +86,7 @@ export default function Sony() {
                 </p>
               </section>
               <figure id="img1" className="flex flex-col items-center gap-1">
-                <Image
+                <ExportedImage
                   src={notes}
                   alt="Notes from original Special Olympics site"
                   className="shadow-md"
@@ -109,7 +110,7 @@ export default function Sony() {
                 </p>
               </section>
               <figure id="img2" className="flex flex-col items-center gap-1 self-center">
-                <Image
+                <ExportedImage
                   src={styleboard}
                   alt="Styleboard for the site redesign"
                   className="shadow-md"

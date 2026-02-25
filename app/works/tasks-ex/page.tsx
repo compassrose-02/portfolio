@@ -3,7 +3,8 @@
 import WorkPageNav from "../components/workPageNav";
 import { getCurrentYear } from "@/app/lib/utils";
 import './page.css';
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+ "next/image";
 import ImageGallery from "react-image-gallery";
 import type { GalleryItem, ImageGalleryRef } from "react-image-gallery";
 import { useRef } from "react";
@@ -89,7 +90,7 @@ export default function TasksEx() {
               <section id="b3" className="flex flex-col gap-2">
                 <h4>Original Screens</h4>
                 <p>The original screens of Tasks app are plain. This works for a Google product, it fits with their design system and is meant to appeal to as many users as possible.</p>
-                <Image
+                <ExportedImage
                   src={ogscreens}
                   alt="Original screens of the app before redesign"
                   className="rounded-lg border border-gray-300"
@@ -98,7 +99,7 @@ export default function TasksEx() {
               <section id="b4" className="flex flex-col gap-2">
                 <h4>Revamped Screens</h4>
                 <p>The revamped screens show a more colorful and textured design style, focusing down on a user group who appreciate a more personal, expressive and fun interface.</p>
-                <Image
+                <ExportedImage
                   src={finalscreens}
                   alt="Final screens of the app redesign, showing a more colorful and textured design style"
                   className="rounded-lg border border-gray-300"

@@ -3,7 +3,8 @@
 import WorkPageNav from "../components/workPageNav";
 import { getCurrentYear } from "@/app/lib/utils";
 import './page.css';
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+ "next/image";
 import ImageGallery from "react-image-gallery";
 import type { GalleryItem, ImageGalleryRef } from "react-image-gallery";
 import { useRef } from "react";
@@ -102,7 +103,7 @@ export default function Sony() {
                 </p>
               </section>
               <figure id="i1" className="flex flex-col items-center gap-1 self-center">
-                <Image src={vsmile} alt="2004 VTech V.Smile" className="w-full h-auto" />
+                <ExportedImage src={vsmile} alt="2004 VTech V.Smile" className="w-full h-auto" />
                 <figcaption className="text-sm text-gray-500">
                   The VTech V.Smile TV Learning System. Throwback for early 2000s kids. 
                 </figcaption>
@@ -122,7 +123,7 @@ export default function Sony() {
                 </p>
               </section>
               <figure id="i2" className="flex flex-col items-center gap-1 self-center">
-                <Image src={shutterkeyframes} alt="Shutter Keyframes" className="w-full h-auto" />
+                <ExportedImage src={shutterkeyframes} alt="Shutter Keyframes" className="w-full h-auto" />
                 <figcaption className="text-sm text-gray-500">
                   Keyframes for the shutter button animation. Yay, bee butt!
                 </figcaption>

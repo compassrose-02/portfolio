@@ -1,7 +1,8 @@
 import WorkPageNav from "../components/workPageNav";
 import { getCurrentYear } from "@/app/lib/utils";
 import './page.css';
-import Image from "next/image";
+import ExportedImage from "next-image-export-optimizer";
+ "next/image";
 import cfm56 from './img/cfm56.png';
 import mviq_fd_2way from './img/mviq_fd_2way.png';
 import hero from './img/hero.png';
@@ -45,12 +46,12 @@ export default function tt21() {
                                     I created wireframes and interactive prototypes in Figma to explore different layouts and control schemes. After several rounds of iteration and feedback from stakeholders, I finalized the design and created detailed specifications for the development team to implement. I gained experience with developer handoff as the finished design was implemented into the software. An updated version of the UI is still present on the device, I’m proud to have something I designed be used in the wild and making an impact!
                                 </p>
                             </section>
-                            <Image
+                            <ExportedImage
                                 id="img1"
                                 src={cfm56}
                                 alt="CFM56 Gas Turbine"
                             />
-                            <Image
+                            <ExportedImage
                                 id="img2"
                                 src={mviq_fd_2way}
                                 alt="MVIQ+ and FutureDrive NG+"
