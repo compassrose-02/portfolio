@@ -195,7 +195,7 @@ export default function Home() {
             </h2>
             <ul className='grid grid-cols-2 gap-5'>
               <li>
-                <Link href="/experience/waygate" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
+                <Link href="" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Waygate Technologies</h4>
                     <p>01/2024 - 07/2024</p>
