@@ -69,7 +69,7 @@ export default function Home() {
                 <div className='flex gap-2'>
                   <button onClick={() => copyToClipboard("pankow.riley.02@gmail.com")} aria-label='Email' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><MdMail /></button>
                   <a href="https://www.linkedin.com/in/riley-pankow-0003a3293" aria-label='LinkedIn' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><FaLinkedin /></a>
-                  <a href="/public/RileyPankowCV2026.pdf" download="RileyPankowCV2026.pdf" aria-label='CV Download' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-2xl font-bold text-white'>CV</a>
+                  <a href="/RileyPankowCV2026.pdf" download="RileyPankowCV2026.pdf" aria-label='CV Download' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-2xl font-bold text-white'>CV</a>
                 </div>
               </div>
             </div>
