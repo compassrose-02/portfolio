@@ -33,7 +33,7 @@ export default function Home() {
     <div className='flex'>
       <ScrollNav />
       <div>
-        <header className='bg-gray-100 flex justify-around h-100 items-center'>
+        <header className='bg-gray-100 flex justify-around h-75 sm:h-100 items-center'>
           <ExportedImage
             src={pfp}
             alt="Picture of Riley Pankow"
@@ -53,7 +53,7 @@ export default function Home() {
             <h3 id='skills' className='leading-10'>
               I have experience with:
             </h3>
-            <div className='flex flex-col justify-between ' id='nameContent'>
+            <div className='flex flex-col justify-between gap-3' id='nameContent'>
               <div className='flex flex-col gap-2'>
                 <h3>
                   UI/UX Designer | Front-end Dev
@@ -74,41 +74,39 @@ export default function Home() {
               </div>
             </div>
             <div id='skillsContent'>
-              <div className='flex gap-2'>
-                <div className='w-1/4'>
+                <div id='designtools'>
                   <h4>
                     Design Tools
                   </h4>
                   <SkillsBox content={['Figma', 'Spline', 'Illustrator', 'Photoshop', 'Lightroom']} />
                 </div>
-                <div className='w-1/4'>
+                <div id='devtools'>
                   <h4>
                     Dev Tools
                   </h4>
                   <SkillsBox content={['VSCode', 'Visual Studio', 'JetBrains IDEs', 'Android Studio', 'XCode', 'FlutterFlow']} />
                 </div>
-                <div className='w-1/4'>
+                <div id='languages'>
                   <h4>
                     Languages
                   </h4>
                   <SkillsBox content={['HTML', 'CSS', 'JS', 'PHP', 'C++', 'Python', 'Java', 'Swift', 'Flutter', 'React', 'ASP.net', 'Kotlin']} />
                 </div>
-                <div className='w-1/4'>
+                <div id='softskills'>
                   <h4>
                     Soft Skills
                   </h4>
                   <SkillsBox content={['Group Leadership', 'Communication', 'Team-Player', 'Adaptable', 'Loves to Learn']} />
                 </div>
-              </div>
             </div>
           </section>
           <section id="works" className='bg-gray-100 px-6 py-10'>
             <h2>
               Selected Works
             </h2>
-            <ul className='grid grid-cols-2 gap-5'>
+            <ul className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
               <li>
-                <Link href="/works/tt2.1" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                <Link href="/works/tt2.1" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>MVIQ+ Turning Tool Integration</h4>
                     <p>Waygate Technologies - 2024</p>
@@ -121,7 +119,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/works/sony" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                <Link href="/works/sony" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Special Olympics Site Redesign</h4>
                     <p>Rochester Institute of Technology - 2025</p>
@@ -134,7 +132,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/works/axolift" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                <Link href="/works/axolift" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>AxoLift Capstone Project</h4>
                     <p>Rochester Institute of Technology - 2025</p>
@@ -147,7 +145,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/works/camera-ex" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                <Link href="/works/camera-ex" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Whimsical Camera Exercise</h4>
                     <p>Rochester Institute of Technology - 2025</p>
@@ -160,7 +158,7 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/works/tasks-ex" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                <Link href="/works/tasks-ex" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Tasks Revamp Exercise</h4>
                     <p>Rochester Institute of Technology - 2025</p>
@@ -197,7 +195,7 @@ export default function Home() {
             </h2>
             <ul className='grid grid-cols-2 gap-5'>
               <li>
-                <Link href="/experience/waygate" className='bg-white flex flex-row justify-between h-30 hover:scale-105 transition-transform duration-300'>
+                <Link href="/experience/waygate" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Waygate Technologies</h4>
                     <p>01/2024 - 07/2024</p>

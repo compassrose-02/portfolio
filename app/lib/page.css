@@ -1,23 +1,97 @@
 #about {
     display: grid;
     grid-template-columns: 1fr 1.85fr;
-    grid-template-areas: 
-    'name skills'
-    'nameContent skillsContent';
-    gap: 0px 20px;
 }
 
 #name {
     grid-area: name;
     align-self: baseline;
 }
+
 #skills {
     grid-area: skills;
     align-self: baseline;
 }
+
 #nameContent {
     grid-area: nameContent;
 }
+
 #skillsContent {
     grid-area: skillsContent;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+}
+
+#designtools {
+    grid-area: dsn;
+}
+
+#devtools {
+    grid-area: dev;
+}
+
+#languages {
+    grid-area: lang;
+}
+
+#softskills {
+    grid-area: soft;
+}
+
+@media (min-width: 0) {
+    #about {
+        grid-template-areas:
+            'name name'
+            'nameContent nameContent'
+            'skills skills'
+            'skillsContent skillsContent';
+
+        gap: 20px 20px;
+
+    }
+
+    #skillsContent {
+        grid-template-areas: 
+            'dsn dsn dsn dsn'
+            'dev dev dev dev'
+            'lang lang lang lang'
+            'soft soft soft soft';
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h3 {
+        font-size: 1.25rem;
+    }
+
+    header h1 {
+        display: none;
+    }
+}
+
+@media (min-width: 48rem) {
+    #about {
+        grid-template-areas:
+            'name skills'
+            'nameContent skillsContent';
+
+        gap: 0px 20px;
+    }
+
+    #skillsContent {
+        grid-template-areas: 
+            'dsn dev lang soft';
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
 }
