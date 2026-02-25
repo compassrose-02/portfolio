@@ -1,3 +1,5 @@
+'use client'
+
 import Link from 'next/link'
 import ExportedImage from "next-image-export-optimizer";
 
@@ -18,6 +20,12 @@ import ex3logo from './lib/img/ex3logo.png'
 
 import './lib/page.css';
 import { getCurrentYear } from './lib/utils';
+
+function copyToClipboard(text: string) {
+  navigator.clipboard.writeText(text)
+    .then(() => { alert('Email address copied to clipboard!'); })
+    .catch(err => { console.error('Failed to copy email:', err); });
+}
 
 export default function Home() {
 
@@ -59,8 +67,9 @@ export default function Home() {
                   Get in Touch
                 </h4>
                 <div className='flex gap-2'>
-                  <button aria-label='Email' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><MdMail /></button>
-                  <button aria-label='LinkedIn' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><FaLinkedin /></button>
+                  <button onClick={() => copyToClipboard("pankow.riley.02@gmail.com")} aria-label='Email' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><MdMail /></button>
+                  <a href="https://www.linkedin.com/in/riley-pankow-0003a3293" aria-label='LinkedIn' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-3xl text-white'><FaLinkedin /></a>
+                  <a href="/public/RileyPankowCV2026.pdf" download="RileyPankowCV2026.pdf" aria-label='CV Download' className='transition-colors duration-300 p-2 bg-gray-800 hover:bg-gray-500 text-2xl font-bold text-white'>CV</a>
                 </div>
               </div>
             </div>
