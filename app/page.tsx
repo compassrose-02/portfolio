@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Image from 'next/image'
+import ExportedImage from "next-image-export-optimizer";
 
 import ScrollNav from './components/scrollnav';
 import SkillsBox from './components/skillsbox';
@@ -26,7 +26,7 @@ export default function Home() {
       <ScrollNav />
       <div>
         <header className='bg-gray-100 flex justify-around h-100 items-center'>
-          <Image
+          <ExportedImage
             src={pfp}
             alt="Picture of Riley Pankow"
             className='h-full w-auto'
@@ -104,7 +104,7 @@ export default function Home() {
                     <h4>MVIQ+ Turning Tool Integration</h4>
                     <p>Waygate Technologies - 2024</p>
                   </div>
-                  <Image
+                  <ExportedImage
                     src={ttimg}
                     alt="MVIQ+ Turning Tool Integration Image"
                     className='h-full w-auto aspect-square object-cover'
@@ -117,7 +117,7 @@ export default function Home() {
                     <h4>Special Olympics Site Redesign</h4>
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
-                  <Image
+                  <ExportedImage
                     src={sonylogo}
                     alt="Special Olympics NY Logo"
                     className='h-full w-auto  aspect-square object-cover'
@@ -130,7 +130,7 @@ export default function Home() {
                     <h4>AxoLift Capstone Project</h4>
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
-                  <Image
+                  <ExportedImage
                     src={axoliftlogo}
                     alt="AxoLift Logo"
                     className='h-full w-auto  aspect-square object-cover'
@@ -143,7 +143,7 @@ export default function Home() {
                     <h4>Whimsical Camera Exercise</h4>
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
-                  <Image
+                  <ExportedImage
                     src={ex2logo}
                     alt="Exercise 2 Logo"
                     className='h-full w-auto aspect-square object-cover'
@@ -156,7 +156,7 @@ export default function Home() {
                     <h4>Tasks Revamp Exercise</h4>
                     <p>Rochester Institute of Technology - 2025</p>
                   </div>
-                  <Image
+                  <ExportedImage
                     src={ex3logo}
                     alt="Exercise 3 Logo"
                     className='h-full w-auto aspect-square object-cover'
@@ -193,7 +193,7 @@ export default function Home() {
                     <h4>Waygate Technologies</h4>
                     <p>01/2024 - 07/2024</p>
                   </div>
-                  <Image
+                  <ExportedImage
                     src={wglogo}
                     alt="Waygate Technologies Logo"
                     className='h-full w-auto'
