@@ -10,7 +10,7 @@ import { FaLinkedin } from "react-icons/fa";
 import pfp from './lib/img/personplaceholder.jpg';
 import placeholder from './lib/img/imgplaceholder.jpg';
 import wglogo from './lib/img/waygatelogo.jpg'
-import ttimg from '../public/mviq_fd.png'
+import ttimg from './lib/img/mviq_fd.png'
 import sonylogo from './lib/img/sonylogo.png'
 import axoliftlogo from './lib/img/axoliftlogo.png'
 import ex2logo from './lib/img/ex2logo.png'
