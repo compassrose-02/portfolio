@@ -9,7 +9,7 @@ import SkillsBox from './components/skillsbox';
 import { MdMail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
 
-import pfp from './lib/img/personplaceholder.jpg';
+import pfp from './lib/img/portraitalpha.png';
 import placeholder from './lib/img/imgplaceholder.jpg';
 import wglogo from './lib/img/waygatelogo.jpg'
 import ttimg from './lib/img/mviq_fd.png'

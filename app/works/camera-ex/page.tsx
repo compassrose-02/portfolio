@@ -139,7 +139,7 @@ export default function Sony() {
                   Taking an unclear prompt, exploring the possibility space, and creating a clear and strong vision out of the ambiguity is an important experience that I had during this exercise. I also got to practice using Figma’s animation features in a new way, and I was really happy with how the animations turned out. I think the dial animation in particular is a really fun little interaction that adds a lot of character to the design.
                 </p>
               </section>
-              <iframe id="b6" style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width={800} height={450} src="https://embed.figma.com/proto/3ZrfUTVqkPKFEPh7idjuOm/Exercise-2?node-id=292-71&scaling=scale-down&content-scaling=fixed&page-id=7%3A3&starting-point-node-id=291%3A105&embed-host=share" allowFullScreen></iframe>
+              <iframe id="b6" className="w-fit" style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }} width={800} height={450} src="https://embed.figma.com/proto/3ZrfUTVqkPKFEPh7idjuOm/Exercise-2?node-id=292-71&scaling=scale-down&content-scaling=fixed&page-id=7%3A3&starting-point-node-id=291%3A105&embed-host=share" allowFullScreen></iframe>
             </div>
           </div>
           <div className="p-6 flex flex-col gap-4">
