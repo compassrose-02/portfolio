@@ -4,7 +4,7 @@ import WorkPageNav from "../components/expPageNav";
 import { getCurrentYear } from "@/app/lib/utils";
 import './page.css';
 import ExportedImage from "next-image-export-optimizer";
- "next/image";
+"next/image";
 import ImageGallery from "react-image-gallery";
 import type { GalleryItem, ImageGalleryRef } from "react-image-gallery";
 import { useRef } from "react";
@@ -45,16 +45,13 @@ export default function Waygate() {
                 </h4>
                 <ul className="list-disc list-inside">
                   <li>
-                    Created a mobile mockup of a “whimsical children’s camera” based on a short student prompt
+                    Served as on-site liaison for the international User Experience team, provided UX evaluation and competitive analysis for remote visual inspection products.
                   </li>
                   <li>
-                    Gained experience in the design process - developing a short prompt into a refined idea and appearance
+                    Created interface mockups, hardware supplemental material, and promotional material using Figma and the Adobe suite
                   </li>
                   <li>
-                    Gained experience in 3D interactive design using Spline
-                  </li>
-                  <li>
-                    Applied Figma animations to create a novel interactive experience
+                    Lead a project to revamp the product photography on the online storefront.
                   </li>
                 </ul>
               </section>
