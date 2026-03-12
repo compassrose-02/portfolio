@@ -92,6 +92,7 @@ export default function TT21() {
                                 src={mviq_fd_2way}
                                 alt="MVIQ+ and FutureDrive NG+"
                             />
+                            {/* TODO: Add figures and captions to the images on this page */}
                         </div>
                     </div>
 

@@ -34,6 +34,7 @@ export default function Home() {
       <ScrollNav />
       <div>
         <header className='bg-gray-100 flex justify-around h-75 sm:h-100 items-center'>
+          {/* TODO: Add a new hero image that doesn't suck. Also maybe add some fun animations or a gradient here? Experiment with color like you have on your CV.  */}
           <ExportedImage
             src={pfp}
             alt="Picture of Riley Pankow"

@@ -5,24 +5,13 @@ import { getCurrentYear } from "@/app/lib/utils";
 import './page.css';
 import ExportedImage from "next-image-export-optimizer";
 "next/image";
-import ImageGallery from "react-image-gallery";
-import type { GalleryItem, ImageGalleryRef } from "react-image-gallery";
-import { useRef } from "react";
-import { IoMdApps } from "react-icons/io";
 
 // import hero from './img/hero.png';
+import turbofan from './img/Turbofan3_Unlabelled.gif';
+import inspection from './img/mviq_inspection.png';
+import ptz from './img/ptzselfie.jpg';
 
 export default function Waygate() {
-
-
-  const images: GalleryItem[] = [
-    // {
-    //   original: finalscreen.src,
-    //   thumbnail: finalscreenthumb.src,
-    // },
-  ]
-
-  const galleryRef = useRef<ImageGalleryRef>(null);
 
   return (
     <div className="flex">
@@ -55,21 +44,38 @@ export default function Waygate() {
                   </li>
                 </ul>
               </section>
-            </div>
-          </div>
-          <div className="p-6 flex flex-col gap-4">
-            <div className="flex gap-1 items-center">
-              <h4>
-                Design Artifacts
-              </h4>
-              <IoMdApps size={20} />
-            </div>
-            <div className="bg-gray-200">
-              <ImageGallery
-                ref={galleryRef}
-                items={images}
-                onSlide={(index) => console.log("Slid to", index)}
-              />
+              <section id="b2" className="flex flex-col gap-2">
+                <h4>
+                  Experience
+                </h4>
+                <p>
+                  I interned at Waygate Technologies from January to June of 2024. Based in Skaneateles NY, Waygate designs and manufactures non-destructive testing equipment for industrial applications. During my intership I was able to contribute to the development and deployment of high-end video borescopes and pan-tilt-zoom inspection cameras.
+                </p>
+                <p>
+                  I learned about remote visual inspection in the aerospace sector, where technicians use Waygate’s video borescopes to get an inside view of the most mission-critical areas of commercial gas turbines. I also gained important experience in designing touch interfaces for industrial equipment, where a user’s needs and constraints differ significantly from consumer devices.
+                </p>
+                <p>
+                  I leveraged my design skills to create a graphical user guide for pan-tilt-zoom camera system assembly and startup. I also designed, proposed, and initiated a new product photography workflow to increase image quality for items on Waygate’s online storefront.
+                </p>
+              </section>
+              <figure id="i1" className="flex flex-col items-center gap-1 self-center">
+                <ExportedImage src={turbofan} alt="Turbofan Diagram" className="w-full h-auto shadow-md" />
+                <figcaption className="text-sm text-gray-500">
+                  The inner components of a commercial turbofan engine.
+                </figcaption>
+              </figure>
+              <figure id="i2" className="flex flex-col items-center gap-1 self-center">
+                <ExportedImage src={inspection} alt="MVIQ+ inspection" className="w-full h-auto shadow-md" />
+                <figcaption className="text-sm text-gray-500">
+                  An MVIQ+ borescope in use to inspect the interior of a gas turbine.
+                </figcaption>
+              </figure>
+              <figure id="i3" className="flex flex-col items-center gap-1 self-center">
+                <ExportedImage src={ptz} alt="PTZ Selfie" className="w-full h-auto shadow-md" />
+                <figcaption className="text-sm text-gray-500">
+                  The most expensive selfie I’ve ever taken, using the Everest Ca-Zoom HD.
+                </figcaption>
+              </figure>
             </div>
           </div>
         </main>
