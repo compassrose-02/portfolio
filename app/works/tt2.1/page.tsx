@@ -82,17 +82,18 @@ export default function TT21() {
                                     I created wireframes and interactive prototypes in Figma to explore different layouts and control schemes. After several rounds of iteration and feedback from stakeholders, I finalized the design and created detailed specifications for the development team to implement. I gained experience with developer handoff as the finished design was implemented into the software. An updated version of the UI is still present on the device, I’m proud to have something I designed be used in the wild and making an impact!
                                 </p>
                             </section>
-                            <ExportedImage
-                                id="img1"
-                                src={cfm56}
-                                alt="CFM56 Gas Turbine"
-                            />
-                            <ExportedImage
-                                id="img2"
-                                src={mviq_fd_2way}
-                                alt="MVIQ+ and FutureDrive NG+"
-                            />
-                            {/* TODO: Add figures and captions to the images on this page */}
+                            <figure id="img1" className="flex flex-col items-center gap-1 self-center">
+                                <ExportedImage src={cfm56} alt="CFM56 Gas Turbine" className="w-full h-auto shadow-md" />
+                                <figcaption className="text-sm text-gray-500">
+                                    The CFM56 is a popular commercial gas turbine. Turning tool integration was tested on an on-site example of this model.
+                                </figcaption>
+                            </figure>
+                            <figure id="img2" className="flex flex-col items-center gap-1 self-center">
+                                <ExportedImage src={mviq_fd_2way} alt="MVIQ+ and FutureDrive NG+" className="w-full h-auto shadow-md" />
+                                <figcaption className="text-sm text-gray-500">
+                                    The MVIQ+ borescope and FutureDrive NG+ turning tool.
+                                </figcaption>
+                            </figure>
                         </div>
                     </div>
 

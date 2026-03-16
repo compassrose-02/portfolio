@@ -3,6 +3,22 @@
     grid-template-columns: 1fr 1.85fr;
 }
 
+header {
+    background-image: url("./img/heroImage.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+header h1{
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
 #name {
     grid-area: name;
     align-self: baseline;
@@ -53,7 +69,7 @@
     }
 
     #skillsContent {
-        grid-template-areas: 
+        grid-template-areas:
             'dsn dsn dsn dsn'
             'dev dev dev dev'
             'lang lang lang lang'
@@ -83,7 +99,7 @@
     }
 
     #skillsContent {
-        grid-template-areas: 
+        grid-template-areas:
             'dsn dev lang soft';
     }
 
@@ -95,7 +111,7 @@
         font-size: 1.5rem;
     }
 
-    header h1{
+    header h1 {
         display: flex;
     }
 }

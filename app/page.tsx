@@ -33,14 +33,8 @@ export default function Home() {
     <div className='flex'>
       <ScrollNav />
       <div>
-        <header className='bg-gray-100 flex justify-around h-75 sm:h-100 items-center'>
-          {/* TODO: Add a new hero image that doesn't suck. Also maybe add some fun animations or a gradient here? Experiment with color like you have on your CV.  */}
-          <ExportedImage
-            src={pfp}
-            alt="Picture of Riley Pankow"
-            className='h-full w-auto'
-          />
-          <h1 className='flex flex-col text-7xl'>
+        <header className='bg-gray-100 h-60 sm:h-100'>
+          <h1 className='flex flex-col text-7xl bg-gray-800/80 p-5'>
             <span>Design</span>
             <span>Develop</span>
             <span className='font-bold italic'>Delight!</span>
@@ -196,7 +190,7 @@ export default function Home() {
             </h2>
             <ul className='grid grid-cols-2 gap-5'>
               <li>
-                <Link href="" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
+                <Link href="/experience/waygate" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Waygate Technologies</h4>
                     <p>01/2024 - 07/2024</p>
