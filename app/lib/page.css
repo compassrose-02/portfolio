@@ -2,15 +2,6 @@
     display: grid;
     grid-template-columns: 1fr 1.85fr;
 }
-
-header {
-    background-image: url("./img/heroImage.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-/* TODO: you have somehow made the header image stay on every single header page. Fix that pleeeease! */
 header h1{
     position: absolute;
     top: 50%;

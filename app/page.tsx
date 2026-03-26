@@ -17,6 +17,7 @@ import sonylogo from './lib/img/sonylogo.png'
 import axoliftlogo from './lib/img/axoliftlogo.png'
 import ex2logo from './lib/img/ex2logo.png'
 import ex3logo from './lib/img/ex3logo.png'
+import heroImage from './lib/img/heroImage.jpg';
 
 import './lib/page.css';
 import { getCurrentYear } from './lib/utils';
@@ -33,7 +34,13 @@ export default function Home() {
     <div className='flex'>
       <ScrollNav />
       <div>
-        <header className='bg-gray-100 h-60 sm:h-100'>
+        <header style={{
+          backgroundImage: "url(" + heroImage.src + ")",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
+          backgroundSize: "cover",
+          position: "relative"
+        }} className='bg-gray-100 h-60 sm:h-100'>
           <h1 className='flex flex-col text-7xl bg-gray-800/80 p-5'>
             <span>Design</span>
             <span>Develop</span>
@@ -69,30 +76,30 @@ export default function Home() {
               </div>
             </div>
             <div id='skillsContent'>
-                <div id='designtools'>
-                  <h4>
-                    Design Tools
-                  </h4>
-                  <SkillsBox content={['Figma', 'Spline', 'Illustrator', 'Photoshop', 'Lightroom']} />
-                </div>
-                <div id='devtools'>
-                  <h4>
-                    Dev Tools
-                  </h4>
-                  <SkillsBox content={['VSCode', 'Visual Studio', 'JetBrains IDEs', 'Android Studio', 'XCode', 'FlutterFlow']} />
-                </div>
-                <div id='languages'>
-                  <h4>
-                    Languages
-                  </h4>
-                  <SkillsBox content={['HTML', 'CSS', 'JS', 'PHP', 'C++', 'Python', 'Java', 'Swift', 'Flutter', 'React', 'ASP.net', 'Kotlin']} />
-                </div>
-                <div id='softskills'>
-                  <h4>
-                    Soft Skills
-                  </h4>
-                  <SkillsBox content={['Group Leadership', 'Communication', 'Team-Player', 'Adaptable', 'Loves to Learn']} />
-                </div>
+              <div id='designtools'>
+                <h4>
+                  Design Tools
+                </h4>
+                <SkillsBox content={['Figma', 'Spline', 'Illustrator', 'Photoshop', 'Lightroom']} />
+              </div>
+              <div id='devtools'>
+                <h4>
+                  Dev Tools
+                </h4>
+                <SkillsBox content={['VSCode', 'Visual Studio', 'JetBrains IDEs', 'Android Studio', 'XCode', 'FlutterFlow']} />
+              </div>
+              <div id='languages'>
+                <h4>
+                  Languages
+                </h4>
+                <SkillsBox content={['HTML', 'CSS', 'JS', 'PHP', 'C++', 'Python', 'Java', 'Swift', 'Flutter', 'React', 'ASP.net', 'Kotlin']} />
+              </div>
+              <div id='softskills'>
+                <h4>
+                  Soft Skills
+                </h4>
+                <SkillsBox content={['Group Leadership', 'Communication', 'Team-Player', 'Adaptable', 'Loves to Learn']} />
+              </div>
             </div>
           </section>
           <section id="works" className='bg-gray-100 px-6 py-10'>
