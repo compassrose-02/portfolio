@@ -48,7 +48,7 @@ export default function Home() {
           </h1>
         </header>
         <main>
-          <section className='bg-white px-6 py-10' id='about'>
+          <section className='bg-white' id='about'>
             <h2 id='name' className='leading-10'>
               I&apos;m Riley Pankow
             </h2>
@@ -61,7 +61,7 @@ export default function Home() {
                   UI/UX Designer | Front-end Dev
                 </h3>
                 <p>
-                  I create novel UI design solutions, develop engaging web and mobile applications, and uplift teams with contagious enthusiasm!
+                  Designing & coding quality UI for Web, Mobile, and Industrial software
                 </p>
               </div>
               <div>
@@ -80,35 +80,29 @@ export default function Home() {
                 <h4>
                   Design Tools
                 </h4>
-                <SkillsBox content={['Figma', 'Spline', 'Illustrator', 'Photoshop', 'Lightroom']} />
-              </div>
-              <div id='devtools'>
-                <h4>
-                  Dev Tools
-                </h4>
-                <SkillsBox content={['VSCode', 'Visual Studio', 'JetBrains IDEs', 'Android Studio', 'XCode', 'FlutterFlow']} />
+                <SkillsBox content={['Figma', 'Spline', 'Illustrator', 'Photoshop']} />
               </div>
               <div id='languages'>
                 <h4>
                   Languages
                 </h4>
-                <SkillsBox content={['HTML', 'CSS', 'JS', 'PHP', 'C++', 'Python', 'Java', 'Swift', 'Flutter', 'React', 'ASP.net', 'Kotlin']} />
+                <SkillsBox content={['HTML + CSS + JS', 'React', 'Jetpack Compose', 'SwiftUI', 'Flutter']} />
               </div>
-              <div id='softskills'>
+              <div id='devcycle'>
                 <h4>
-                  Soft Skills
+                  Dev Cycle
                 </h4>
-                <SkillsBox content={['Group Leadership', 'Communication', 'Team-Player', 'Adaptable', 'Loves to Learn']} />
+                <SkillsBox content={['Agile Workflow', 'UI Desing Process', 'Version Control', 'Client Negotiation']} />
               </div>
             </div>
           </section>
-          <section id="works" className='bg-gray-100 px-6 py-10'>
+          <section id="works" className='bg-gray-100'>
             <h2>
               Selected Works
             </h2>
             <ul className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
               <li>
-                <Link href="/works/tt2.1" className='bg-white flex flex-row justify-between min-h-35 hover:scale-105 transition-transform duration-300'>
+                <Link href="/works/tt2.1" className='bg-white flex flex-col-reverse justify-between min-h-80 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>MVIQ+ Turning Tool Integration</h4>
                     <p>Waygate Technologies - 2024</p>
@@ -116,7 +110,20 @@ export default function Home() {
                   <ExportedImage
                     src={ttimg}
                     alt="MVIQ+ Turning Tool Integration Image"
-                    className='w-35 object-cover'
+                    className='object-cover'
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link href="/works/axolift" className='bg-white flex flex-col-reverse justify-between min-h-80 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex flex-col justify-between p-4'>
+                    <h4>AxoLift Capstone Project</h4>
+                    <p>Rochester Institute of Technology - 2025</p>
+                  </div>
+                  <ExportedImage
+                    src={axoliftlogo}
+                    alt="AxoLift Logo"
+                    className='object-cover'
                   />
                 </Link>
               </li>
@@ -134,19 +141,6 @@ export default function Home() {
                 </Link>
               </li>
               <li>
-                <Link href="/works/axolift" className='bg-white flex flex-row justify-between min-h-35 hover:scale-105 transition-transform duration-300'>
-                  <div className='flex flex-col justify-between p-4'>
-                    <h4>AxoLift Capstone Project</h4>
-                    <p>Rochester Institute of Technology - 2025</p>
-                  </div>
-                  <ExportedImage
-                    src={axoliftlogo}
-                    alt="AxoLift Logo"
-                    className='w-35 object-cover'
-                  />
-                </Link>
-              </li>
-              <li>
                 <Link href="/works/camera-ex" className='bg-white flex flex-row justify-between min-h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Whimsical Camera Exercise</h4>
@@ -159,7 +153,7 @@ export default function Home() {
                   />
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/works/tasks-ex" className='bg-white flex flex-row justify-between min-h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Tasks Revamp Exercise</h4>
@@ -171,10 +165,10 @@ export default function Home() {
                     className='w-35 object-cover'
                   />
                 </Link>
-              </li>
+              </li> */}
             </ul>
           </section>
-          <section id="education" className='bg-white px-6 py-10'>
+          <section id="education" className='bg-white'>
             <h2>
               Education
             </h2>
@@ -191,7 +185,7 @@ export default function Home() {
               </div>
             </div>
           </section>
-          <section id="experience" className='bg-gray-100 px-6 py-10'>
+          <section id="experience" className='bg-gray-100'>
             <h2>
               Work Experience
             </h2>
