@@ -46,6 +46,7 @@ export default function TT21() {
                         <h3>
                             Waygate Technologies | 01/2024 - 07/2024
                         </h3>
+                        {/* TODO: Redesign this page to go with the Figma redesign */}
                         <div id="ColGridContainer" className="mt-10">
                             <section id="body0" className="flex gap-2 flex-col">
                                 <h4>

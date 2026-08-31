@@ -102,36 +102,44 @@ export default function Home() {
             </h2>
             <ul className='grid grid-cols-1 sm:grid-cols-2 gap-5'>
               <li>
-                <Link href="/works/tt2.1" className='bg-white flex flex-col-reverse justify-between min-h-80 hover:scale-105 transition-transform duration-300'>
-                  <div className='flex flex-col justify-between p-4'>
-                    <h4>MVIQ+ Turning Tool Integration</h4>
-                    <p>Waygate Technologies - 2024</p>
+                <Link href="/works/tt2.1" className='bg-white flex flex-col-reverse justify-between h-120 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex justify-between p-4 '>
+                    <h4>MVIQ+ Turning Tool Integration UI</h4>
+                    <div className='flex flex-col justify-between'>
+                      <p>Waygate</p>
+                      <p>2024</p>
+                    </div>
                   </div>
                   <ExportedImage
                     src={ttimg}
                     alt="MVIQ+ Turning Tool Integration Image"
-                    className='object-cover'
+                    className='h-full object-cover w-full'
                   />
                 </Link>
               </li>
               <li>
-                <Link href="/works/axolift" className='bg-white flex flex-col-reverse justify-between min-h-80 hover:scale-105 transition-transform duration-300'>
-                  <div className='flex flex-col justify-between p-4'>
+                <Link href="/works/axolift" className='bg-white flex flex-col-reverse justify-between h-120 hover:scale-105 transition-transform duration-300'>
+                  <div className='flex justify-between p-4 '>
                     <h4>AxoLift Capstone Project</h4>
-                    <p>Rochester Institute of Technology - 2025</p>
+                    <div className='flex flex-col justify-between'>
+                      <p>RIT</p>
+                      <p>2025</p>
+                    </div>
                   </div>
                   <ExportedImage
                     src={axoliftlogo}
                     alt="AxoLift Logo"
-                    className='object-cover'
+                    className='h-full object-cover w-full'
                   />
                 </Link>
               </li>
+              {
+              }
               <li>
                 <Link href="/works/sony" className='bg-white flex flex-row justify-between min-h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Special Olympics Site Redesign</h4>
-                    <p>Rochester Institute of Technology - 2025</p>
+                    <p>RIT - 2025</p>
                   </div>
                   <ExportedImage
                     src={sonylogo}
@@ -144,7 +152,7 @@ export default function Home() {
                 <Link href="/works/camera-ex" className='bg-white flex flex-row justify-between min-h-35 hover:scale-105 transition-transform duration-300'>
                   <div className='flex flex-col justify-between p-4'>
                     <h4>Whimsical Camera Exercise</h4>
-                    <p>Rochester Institute of Technology - 2025</p>
+                    <p>RIT - 2025</p>
                   </div>
                   <ExportedImage
                     src={ex2logo}
