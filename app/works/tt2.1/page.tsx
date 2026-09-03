@@ -14,6 +14,7 @@ import mviq_fd_2way from './img/mviq_fd_2way.png';
 import hero from './img/hero.png';
 import mviq_ui from './img/gallery/mviq_ui.jpg';
 import mviq_uithumb from './img/gallery/mviq_uithumb.jpg';
+import inspectionVisual from './img/inspection-visual.png';
 
 export default function TT21() {
 
@@ -37,16 +38,76 @@ export default function TT21() {
             <WorkPageNav />
             <div className="bg-gray-100 w-full">
                 <header className="h-70 flex" style={style}>
-                    <h2 className="mt-auto px-6 text-white">
+                    <h2 className="mt-auto px-12 text-white">
                         MVIQ+ Turning Tool Integration
                     </h2>
                 </header>
                 <main className="">
-                    <div className="bg-white px-6 pb-10 pt-2">
+                    <section className="bg-white pt-3 flex flex-col gap-10" id="top">
+                        <h3>
+                            Waygate Technologies | 01/2024-07/2024
+                        </h3>
+                        <p className="">
+                            During my internship I designed a touch interface for a new software capability{"\n"}
+                            of the company’s flagship video borescope. The interface is live in production,{"\n"}
+                            helping reduce the workload of industrial inspections.{"\n"}
+                        </p>
+                    </section>
+                    <section className="bg-gray-100" id="context">
+                        {/* TODO: make turbine image offset from left instead of right when on smaller screens
+                        TODO: parallax scroll on turbine image (maybe) */}
+                        <h3>
+                            Context
+                        </h3>
+                        <div>
+                            <p>
+                                Technicians inspect gas turbines with two tools.
+                            </p>
+                            <p>
+                                One to rotate the assembly, and another to image each blade.
+                            </p>
+                        </div>
+                        <div className="spacer"></div>
+                        <p>
+                            ...but two remotes for two tools is a handful!
+                        </p>
+                        <ExportedImage src={inspectionVisual} alt="Stylized render of the borescope and turning tool on a turbine" id="contextImage" />
+                    </section>
+                    <section className="bg-white flex gap-10">
+                        <div className="flex flex-col gap-5">
+                            <h3>
+                                Design Goals
+                            </h3>
+                            <div className="flex flex-col gap-4">
+                                <p>
+                                    Integrating the turning tool remote controls into the borescope touch UI makes the inspection workflow much simpler, but screen-space is very limited.
+                                </p>
+                                <p>
+                                    Industrial users may be working with gloved hands, so big buttons are still a must.
+                                </p>
+                                <p>
+                                    I had to design a complex interface, with large buttons, using minimal screen real-estate.
+                                </p>
+                            </div>
+                        </div>
+                        <ExportedImage src={mviq_fd_2way} alt="Graphic of 2-way communication between turning tool and borescope" className="h-auto w-1/2 shrink-0" />
+                    </section>
+                    <section className="bg-gray-100">
+
+                    </section>
+                    <section className="bg-white">
+
+                    </section>
+                    <section className="bg-gray-100">
+
+                    </section>
+                    {/* <div className="bg-white px-6 pb-10 pt-2">
                         <h3>
                             Waygate Technologies | 01/2024 - 07/2024
                         </h3>
-                        {/* TODO: Redesign this page to go with the Figma redesign */}
+                        {
+                            // TODO: Redesign this page to go with the Figma redesign}
+                        }
                         <div id="ColGridContainer" className="mt-10">
                             <section id="body0" className="flex gap-2 flex-col">
                                 <h4>
@@ -112,7 +173,7 @@ export default function TT21() {
                                 onSlide={(index) => console.log("Slid to", index)}
                             />
                         </div>
-                    </div>
+                    </div> */}
 
                 </main>
                 <footer className='px-6 py-10 bg-gray-800 flex justify-center text-white align-center'>

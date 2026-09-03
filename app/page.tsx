@@ -27,7 +27,7 @@ function copyToClipboard(text: string) {
     .then(() => { alert('Email address copied to clipboard!'); })
     .catch(err => { console.error('Failed to copy email:', err); });
 }
-
+//TODO: figure out why this page doesn't shrink all the way down when on small screens.
 export default function Home() {
 
   return (
