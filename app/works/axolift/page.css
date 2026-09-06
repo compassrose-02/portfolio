@@ -1,53 +1,41 @@
- #ColGridContainer {
-     display: grid;
-     grid-template-columns: repeat(12, 1fr);
-     grid-template-rows: auto auto auto auto;
-     gap: 15px;
- }
+section {
+    padding: 80px 50px 80px 50px;
+}
 
- #b1 {
-     grid-area: b1;
- }
+#top {
+    padding-top: 15px;
+}
 
- #b2 {
-     grid-area: b2;
- }
+#herologo {
+    z-index: 1;
+}
 
- #b3 {
-     grid-area: b3;
- }
+header h2 {
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+}
 
- #b4 {
-     grid-area: b4;
- }
+#top p {
+    max-width: 65ch;
+}
 
- #b5 {
-     grid-area: b5;
- }
+#context p {
+    max-width: 35ch;
+}
 
- #i1 {
-     grid-area: i1;
- }
-
- #i2 {
-     grid-area: i2;
- }
-
+#cargraphic {
+    position: absolute;
+    width: 100%;
+    margin-left: -50px;
+    margin-top: -80px;
+}
 
  @media (min-width: 0) {
-     #ColGridContainer {
-         grid-template-areas:
-             'b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1'
-             'b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2 b2'
-             'i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1 i1'
-             'b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3'
-             'i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2'
-             'b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4'
-             'b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5'
-     }
 
      h2 {
          font-size: 1.75rem;
+         white-space: unset;
      }
 
      h3 {
@@ -60,19 +48,10 @@
  }
 
  @media (min-width: 48rem) {
-     #ColGridContainer {
-         grid-template-areas:
-             'b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1 b1'
-             'b2 b2 b2 b2 b2 b2 i1 i1 i1 i1 i1 i1'
-             'b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3 b3'
-             'i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2 i2'
-             'b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4 b4'
-             'b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5 b5'
-         ;
-     }
 
      h2 {
          font-size: 2.5rem;
+         white-space: nowrap;
      }
 
      h3 {

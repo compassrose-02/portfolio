@@ -4,7 +4,7 @@ import WorkPageNav from "../components/workPageNav";
 import { getCurrentYear } from "@/app/lib/utils";
 import './page.css';
 import ExportedImage from "next-image-export-optimizer";
- "next/image";
+"next/image";
 import ImageGallery from "react-image-gallery";
 import type { GalleryItem, ImageGalleryRef } from "react-image-gallery";
 import { useRef } from "react";
@@ -15,6 +15,8 @@ import phonemockup from './img/phonemockup.png';
 import taskflow from './img/taskflow.png';
 import herologo from './img/herologo.png';
 import heromockup from './img/heromockup.png';
+import cargraphic from './img/cargraphic.png';
+
 import dashboardhifi from './img/gallery/dashboardhifi.png';
 import dashboardhifithumb from './img/gallery/dashboardhifithumb.png';
 import dashboardlofi from './img/gallery/dashboardlofi.png';
@@ -59,16 +61,76 @@ export default function Sony() {
       <WorkPageNav />
       <div className="bg-gray-100 w-full">
         <header className="h-70 flex flex-row justify-between bg-[#373D97]">
-          <div className="flex flex-col justify-between">
-            <ExportedImage src={herologo} alt="axolift logo" className="h-full aspect-square"/>
-            <h2 className="px-6 text-white">
+          <div className="relative">
+            <ExportedImage src={herologo} alt="axolift logo" className="h-full aspect-square" id="herologo" />
+            <h2 className="px-12 text-white">
               AxoLift Capstone Project
             </h2>
           </div>
-          <ExportedImage src={heromockup} alt="axolift hero mockup" className="h-full aspect-square" id="heromockup"/>
+          <ExportedImage src={heromockup} alt="axolift hero mockup" className="h-full aspect-square" id="heromockup" />
         </header>
         <main>
-          <div className="bg-white px-6 pb-10 pt-2">
+          <section className="bg-white pt-3 flex flex-col gap-10" id="top">
+            <h3>
+              Rochester Institute of Technology | 1/2025-12/2025
+            </h3>
+            <p className="">
+              As part of a small team, I helped create a web app for a group of volunteer medical transport organizations around Rochester to streamline their operations. I contributed to research, site architecture, visual design, and front-end development.
+            </p>
+          </section>
+          <section className="bg-gray-100 flex flex-col gap-5 relative overflow-clip" id="context">
+            <h3>
+              Context
+            </h3>
+            <div className="h-50 flex flex-col justify-between">
+              <p className="self-start">
+                Volunteer medical transport organizations around Rochester provide ride services to local senior citizens.
+              </p>
+              <p className="self-end">
+                Each organization operated in a unique way with different software, or no software at all.
+              </p>
+            </div>
+            {/* TODO: make this responsive so it looks proper as the page shrinks */}
+            <ExportedImage src={cargraphic} alt="graphic of a car going down a road" id="cargraphic"/>
+          </section>
+          <section className="bg-white flex gap-10" id="goals">
+            <div className="flex flex-col gap-5">
+              <h3>
+                Goals
+              </h3>
+            </div>
+          </section>
+          <section className="bg-gray-100 flex flex-col gap-5" id="design">
+            <h3>
+              Design Process
+            </h3>
+          </section>
+          <section className="bg-white flex flex-col gap-5" id="dev">
+            <h3>
+              Development Process
+            </h3>
+          </section>
+          <section className="bg-white flex flex-col gap-5" id="results">
+            <h3>
+              Results / Postmortem
+            </h3>
+          </section>
+          <section className="bg-gray-100 flex flex-col gap-5">
+            <div className="flex gap-1 items-center">
+              <h3>
+                Design Artifacts
+              </h3>
+              <IoMdApps size={25} />
+            </div>
+            <div className="bg-gray-200">
+              <ImageGallery
+                ref={galleryRef}
+                items={images}
+                onSlide={(index) => console.log("Slid to", index)}
+              />
+            </div>
+          </section>
+          {/* <div className="bg-white px-6 pb-10 pt-2">
             <h3>
               Rochester Institute of Technology | 01/2025 - 12/2025
             </h3>
@@ -174,7 +236,7 @@ export default function Sony() {
                 onSlide={(index) => console.log("Slid to", index)}
               />
             </div>
-          </div>
+          </div> */}
         </main>
         <footer className='px-6 py-10 bg-gray-800 flex justify-center text-white align-center'>
           <p>&copy; {getCurrentYear()} Riley Pankow. All rights reserved.</p>
