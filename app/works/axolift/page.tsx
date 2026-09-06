@@ -16,6 +16,7 @@ import taskflow from './img/taskflow.png';
 import herologo from './img/herologo.png';
 import heromockup from './img/heromockup.png';
 import cargraphic from './img/cargraphic.png';
+import rolediagram from './img/rolediagram.png';
 
 import dashboardhifi from './img/gallery/dashboardhifi.png';
 import dashboardhifithumb from './img/gallery/dashboardhifithumb.png';
@@ -35,22 +36,27 @@ export default function Sony() {
     {
       original: dashboardhifi.src,
       thumbnail: dashboardhifithumb.src,
+      description: "High-fidelity desktop dashboard for managing rides and volunteers.",
     },
     {
       original: dashboardlofi.src,
       thumbnail: dashboardlofithumb.src,
+      description: "Low-fidelity dashboard wireframe exploring the app's core layout.",
     },
     {
       original: dashboardmobile.src,
       thumbnail: dashboardmobilethumb.src,
+      description: "Mobile dashboard concept for accessing ride operations on the go.",
     },
     {
       original: designsystem.src,
       thumbnail: designsystemthumb.src,
+      description: "Visual design system defining AxoLift's reusable interface elements.",
     },
     {
       original: persona.src,
       thumbnail: personathumb.src,
+      description: "User persona capturing the needs of a volunteer transportation coordinator.",
     },
   ]
 
@@ -91,19 +97,49 @@ export default function Sony() {
               </p>
             </div>
             {/* TODO: make this responsive so it looks proper as the page shrinks */}
-            <ExportedImage src={cargraphic} alt="graphic of a car going down a road" id="cargraphic"/>
+            <ExportedImage src={cargraphic} alt="graphic of a car going down a road" id="cargraphic" />
           </section>
           <section className="bg-white flex gap-10" id="goals">
-            <div className="flex flex-col gap-5">
-              <h3>
-                Goals
-              </h3>
+            <div className="flex justify-between w-full items-center">
+              <div className="flex flex-col gap-5">
+                <h3>
+                  Goals
+                </h3>
+                <ul className="list-disc list-inside flex flex-col gap-3">
+                  <li>
+                    Create a web app to automate and track operations for multiple different medical transport organizations.
+                  </li>
+                  <li>
+                    The app will track rides, and different types of volunteers will be able to access their part of the ride workflow through the app.
+                  </li>
+                  <li>
+                    Different organizations run differently, so the software should be configurable to fit how they work.
+                  </li>
+                </ul>
+              </div>
+              <ExportedImage src={phonemockup} alt="phone mockup of the app" className="h-50 w-auto" />
             </div>
           </section>
           <section className="bg-gray-100 flex flex-col gap-5" id="design">
-            <h3>
-              Design Process
-            </h3>
+            <div className="flex justify-between w-full items-center">
+              <div className="flex flex-col gap-5">
+                <h3>
+                  Design Process
+                </h3>
+                <div className="flex flex-col gap-3">
+                  <p>
+                    Our group assumed that the app would be conceptually similar to a rideshare app like Uber or Lyft. We were immediately proven wrong.
+                  </p>
+                  <p>
+                    We got feedback that organizations did not want their riders to have to use our app in any way. Phone calls represented an important social connection for seniors in a way that I hadn’t considered as a young person.
+                  </p>
+                  <p>
+                    The process of hammering out details and gaining consensus on design requirements was an important experience in negotiating between different stakeholders in a productive manner.
+                  </p>
+                </div>
+              </div>
+              <ExportedImage src={rolediagram} alt="phone mockup of the app" className="h-50 w-auto" />
+            </div>
           </section>
           <section className="bg-white flex flex-col gap-5" id="dev">
             <h3>

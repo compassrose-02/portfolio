@@ -35,14 +35,17 @@ export default function Sony() {
     {
       original: wireframe.src,
       thumbnail: wireframethumb.src,
+      description: "Wireframe exploring the donor-focused site structure and layout.",
     },
     {
       original: userflow.src,
       thumbnail: userflowthumb.src,
+      description: "User flow mapping the key paths donors can take through the site.",
     },
     {
       original: final.src,
       thumbnail: finalthumb.src,
+      description: "High-fidelity redesign focused on clear donor pathways and calls to action.",
     },
   ]
 

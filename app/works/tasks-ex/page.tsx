@@ -27,18 +27,22 @@ export default function TasksEx() {
     {
       original: moodboard.src,
       thumbnail: moodboardthumb.src,
+      description: "Moodboard establishing a playful stationery-inspired visual direction.",
     },
     {
       original: colortexture.src,
       thumbnail: colortexturethumb.src,
+      description: "Color and texture studies exploring the redesign's expressive visual style.",
     },
     {
       original: persona.src,
       thumbnail: personathumb.src,
+      description: "User persona representing the young adult and student audience.",
     },
     {
       original: typetreatment.src,
       thumbnail: typetreatmentthumb.src,
+      description: "Typography explorations for the redesigned Google Tasks interface.",
     },
   ]
 

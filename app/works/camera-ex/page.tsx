@@ -27,14 +27,17 @@ export default function Sony() {
     {
       original: finalscreen.src,
       thumbnail: finalscreenthumb.src,
+      description: "Final whimsical camera interface with a playful shutter and zoom control.",
     },
         {
       original: initialscreen.src,
       thumbnail: initialscreenthumb.src,
+      description: "Initial camera interface exploring the app's layout and interaction model.",
     },
         {
       original: moodboard.src,
       thumbnail: moodboardthumb.src,
+      description: "Moodboard of colorful toys and games guiding the children's camera aesthetic.",
     },
   ]
 
