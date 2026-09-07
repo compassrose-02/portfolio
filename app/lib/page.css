@@ -48,6 +48,10 @@ section {
 }
 
 @media (min-width: 0) {
+    section {
+        padding: 80px 20px 80px 20px;
+    }
+
     #about {
         grid-template-areas:
             'name name'
@@ -80,6 +84,10 @@ section {
 }
 
 @media (min-width: 48rem) {
+    section {
+        padding: 80px 50px 80px 50px;
+    }
+
     #about {
         grid-template-areas:
             'name skills'

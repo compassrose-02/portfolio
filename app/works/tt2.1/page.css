@@ -86,6 +86,10 @@ h3 {
 }
 
 @media (min-width: 0) {
+     section {
+         padding: 80px 20px 80px 20px;
+     }
+
     /* #ColGridContainer {
         grid-template-areas:
             'b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0'
@@ -118,6 +122,10 @@ h3 {
 }
 
 @media (min-width: 48rem) {
+     section {
+         padding: 80px 50px 80px 50px;
+     }
+
     /* #ColGridContainer {
         grid-template-areas:
             'b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0 b0'
