@@ -40,7 +40,7 @@ export default function TT21() {
     return (
         <div className="flex">
             <WorkPageNav />
-            <div className="bg-gray-100 w-full">
+            <div className="bg-gray-100 w-full flex-1 min-w-0">
                 <header className="h-70 flex" style={style}>
                     <h2 className="mt-auto px-12 text-white">
                         MVIQ+ Turning Tool Integration

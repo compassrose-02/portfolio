@@ -17,6 +17,8 @@ import herologo from './img/herologo.png';
 import heromockup from './img/heromockup.png';
 import cargraphic from './img/cargraphic.png';
 import rolediagram from './img/rolediagram.png';
+import fflogo from './img/fflogo.png'
+import fblogo from './img/firebaselogo.png'
 
 import dashboardhifi from './img/gallery/dashboardhifi.png';
 import dashboardhifithumb from './img/gallery/dashboardhifithumb.png';
@@ -65,7 +67,7 @@ export default function Sony() {
   return (
     <div className="flex">
       <WorkPageNav />
-      <div className="bg-gray-100 w-full">
+      <div className="bg-gray-100 w-full flex-1 min-w-0">
         <header className="h-70 flex flex-row justify-between bg-[#373D97]">
           <div className="relative">
             <ExportedImage src={herologo} alt="axolift logo" className="h-full aspect-square" id="herologo" />
@@ -142,14 +144,45 @@ export default function Sony() {
             </div>
           </section>
           <section className="bg-white flex flex-col gap-5" id="dev">
-            <h3>
-              Development Process
-            </h3>
+            <div className="flex justify-between w-full items-center gap-10">
+              <div className="flex flex-col gap-5">
+                <h3>
+                  Development Process
+                </h3>
+                <div className="flex flex-col gap-3">
+                  <p>
+                    This was the most challenging part of the project. We built the front-end in FlutterFlow, and quickly ran into issues where we needed more specific features than the platform offered.
+                  </p>
+                  <p>
+                    A significant revision of the back-end Firebase architecture had to be done as well, which proved to be a massive time crunch. Despite the setbacks, our team was able to complete a viable product by the end of the term.
+                  </p>
+                  <p>
+                    Final deployment went well, and we were able to demo the app’s functionality live to the clients during our final presentation.
+                  </p>
+                </div>
+              </div>
+              <div id="imagecontainer" className="">
+                <ExportedImage src={fblogo} alt="flutterflow logo" className="h-50 w-auto self-start" />
+                <ExportedImage src={fflogo} alt="firebase logo" className="h-50 w-auto self-end" />
+
+              </div>
+            </div>
           </section>
-          <section className="bg-white flex flex-col gap-5" id="results">
+          <section className="bg-gray-200 flex flex-col gap-5" id="results">
             <h3>
               Results / Postmortem
             </h3>
+            <div className="flex flex-col gap-5">
+              <p>
+                Our app didn’t get selected for further use, but the project was a success in the sense that we passed and learned a lot of important things.
+              </p>
+              <p>
+                A lot of the things that set us back were architectural and tech selection decisions we made early on. FlutterFlow was attractive from the outset for its low-code but ended up taking more effort for the full front-end.
+              </p>
+              <p>
+                Everyone will make mistakes. I’m happy that I experienced this in a classroom environment where I can take the lessons and apply them to my professional work. I think that’s an asset.
+              </p>
+            </div>
           </section>
           <section className="bg-gray-100 flex flex-col gap-5">
             <div className="flex gap-1 items-center">
@@ -158,7 +191,7 @@ export default function Sony() {
               </h3>
               <IoMdApps size={25} />
             </div>
-            <div className="bg-gray-200">
+            <div className="bg-white">
               <ImageGallery
                 ref={galleryRef}
                 items={images}

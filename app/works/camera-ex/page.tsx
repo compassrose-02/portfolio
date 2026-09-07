@@ -46,7 +46,7 @@ export default function Sony() {
   return (
     <div className="flex">
       <WorkPageNav />
-      <div className="bg-gray-100 w-full">
+      <div className="bg-gray-100 w-full flex-1 min-w-0">
         <header className="h-70 flex justify-between bg-gray-800">
           <h2 className="px-6 mt-auto text-white">
             Whimsical Camera Exercise

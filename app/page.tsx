@@ -33,7 +33,7 @@ export default function Home() {
   return (
     <div className='flex'>
       <ScrollNav />
-      <div>
+      <div className='flex-1 min-w-0'>
         <header style={{
           backgroundImage: "url(" + heroImage.src + ")",
           backgroundPosition: "center",
