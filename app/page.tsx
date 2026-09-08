@@ -31,7 +31,7 @@ function copyToClipboard(text: string) {
 export default function Home() {
 
   return (
-    <div className='flex'>
+    <div className='flex' id='mainContainer'>
       <ScrollNav />
       <div className='flex-1 min-w-0'>
         <header style={{
@@ -200,7 +200,7 @@ export default function Home() {
             <ul className='grid grid-cols-2 gap-5'>
               <li>
                 <Link href="/experience/waygate" className='bg-white flex flex-row justify-between h-35 hover:scale-105 transition-transform duration-300'>
-                  <div className='flex flex-col justify-between p-4'>
+                  <div className='flex flex-col justify-between p-4 w-full'>
                     <h4>Waygate Technologies</h4>
                     <p>01/2024 - 07/2024</p>
                   </div>

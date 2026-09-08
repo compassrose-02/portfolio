@@ -79,6 +79,17 @@ h3 {
         flex-direction: column;
     }
 
+    .workPageNav {
+        writing-mode: horizontal-tb !important;
+    }
+
+    .workPageNav ul {
+        height: fit-content;
+    }
+
+    #mainContainer {
+        flex-direction: column;
+    }
 
 }
 
@@ -109,5 +120,17 @@ h3 {
     #design>div,
     #dev>div {
         flex-direction: row;
+    }
+
+    #mainContainer {
+        flex-direction: row;
+    }
+
+    .workPageNav {
+        writing-mode: sideways-rl !important;
+    }
+
+    .workPageNav ul {
+        height: 100vh;
     }
 }

@@ -38,11 +38,11 @@ export default function TT21() {
     const galleryRef = useRef<ImageGalleryRef>(null);
 
     return (
-        <div className="flex">
+        <div className="flex" id="mainContainer">
             <WorkPageNav />
             <div className="bg-gray-100 w-full flex-1 min-w-0">
                 <header className="h-70 flex" style={style}>
-                    <h2 className="mt-auto px-12 text-white">
+                    <h2 className="mt-auto text-white">
                         MVIQ+ Turning Tool Integration
                     </h2>
                 </header>

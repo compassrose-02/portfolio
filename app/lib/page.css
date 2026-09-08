@@ -47,6 +47,8 @@ section {
     padding: 80px 50px 80px 50px;
 }
 
+
+
 @media (min-width: 0) {
     section {
         padding: 80px 20px 80px 20px;
@@ -81,10 +83,61 @@ section {
     header h1 {
         display: none;
     }
+
+    #mainContainer {
+        flex-direction: column;
+    }
+    .scrollNav {
+        writing-mode:horizontal-tb !important;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+    }
+    .scrollNav ul {
+        height: fit-content;
+    }
+
+    #about {
+        padding-top: 10px;
+    }
+}
+
+@media (max-width: 47.999rem) {
+    .scrollNav {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .scrollNav ul {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .scrollNav li {
+        flex: 1 1 0;
+        min-width: 0;
+    }
+
+    .scrollNav a {
+        font-size: clamp(0.7rem, 4vw, 1.25rem);
+        overflow-wrap: anywhere;
+        padding-left: clamp(0.25rem, 1.5vw, 1rem);
+        padding-right: clamp(0.25rem, 1.5vw, 1rem);
+        text-align: center;
+    }
 }
 
 @media (min-width: 48rem) {
-    section {
+    #mainContainer {
+        flex-direction: row;
+    }
+
+    .scrollNav {
+        writing-mode: sideways-rl !important;
+    }
+
+
+    section, #about {
         padding: 80px 50px 80px 50px;
     }
 
@@ -112,6 +165,4 @@ section {
     header h1 {
         display: flex;
     }
-
-    
 }

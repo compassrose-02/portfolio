@@ -63,6 +63,18 @@
      h3 {
          font-size: 1.25rem;
      }
+
+     .workPageNav {
+         writing-mode: horizontal-tb !important;
+     }
+
+     .workPageNav ul {
+         height: fit-content;
+     }
+
+     #mainContainer {
+         flex-direction: column;
+     }
  }
 
  @media (min-width: 48rem) {
@@ -88,5 +100,17 @@
 
      h3 {
          font-size: 1.5rem;
+     }
+
+     #mainContainer {
+         flex-direction: row;
+     }
+
+     .workPageNav {
+         writing-mode: sideways-rl !important;
+     }
+
+     .workPageNav ul {
+         height: 100vh;
      }
  }
